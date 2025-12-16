@@ -22,3 +22,15 @@ class User(AbstractUser):
     def display_name(self):
         full = f"{self.first_name} {self.last_name}".strip()
         return full if full else self.email
+
+
+class FeedPost(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='feed_posts')
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f'{self.user.display_name} - {self.content[:50]}...'
