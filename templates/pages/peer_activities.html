@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Peer Activities{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">Peer Activities</h1>
+    <div id="peer-activities-list">
+        {% if feed_posts %}
+            {% for post in feed_posts %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.user.display_name }}</h5>
+                        <p class="card-text">{{ post.content }}</p>
+                        <p class="card-subtitle text-muted">{{ post.created_at|date:"F j, Y, P" }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No peer activities to display yet.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
