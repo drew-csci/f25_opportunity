@@ -7,3 +7,12 @@ __pycache__/
 venv/
 ENV/
 env/
+.aider*
+.env
+.env
+.env
+.env
+.env
+.env
+.env
+.env
