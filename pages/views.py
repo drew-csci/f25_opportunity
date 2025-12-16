@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from accounts.models import User # Import User model
 
 def welcome(request):
     return render(request, 'pages/welcome.html')
@@ -21,6 +22,10 @@ def screen3(request):
 
 @login_required
 def company_about(request):
+    # Ensure only organization users can access this page
+    if request.user.user_type != User.UserType.ORGANIZATION:
+        return redirect('screen1')
+
     # These fields would ideally come from a CompanyProfile model linked to the User.
     # For now, using placeholder text and user's email.
     company_name = request.user.display_name if hasattr(request.user, 'display_name') else 'Company'
