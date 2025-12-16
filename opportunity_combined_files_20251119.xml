@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<files root="C:\code_f2025\f25_oppo\f25_opportunity">
-  <file path="BingJie_Zhu.txt" encoding="text">This is BingJie Zhu's txt file for task 2 in this assignment.</file>
+<files root="C:\code-opportunity-20251119\f25_opportunity">
   <file path="bootstrap.py" encoding="text">#!/usr/bin/env python3
 """
 One-shot Python bootstrap for the Opportunity App Django project.
@@ -590,12 +589,6 @@ def main():
 if __name__ == "__main__":
     main()
 </file>
-  <file path="Brandon_Jachera.txt" encoding="text">First commit to the repository!</file>
-  <file path="Dylan_Brooks.txt" encoding="text">This is my text file.</file>
-  <file path="Georgia_Cross.txt" encoding="text">This is my text file </file>
-  <file path="Guanzhou_Shen.txt" encoding="text">This is my text file. That's all.</file>
-  <file path="Joshua_JucaCampoverde.txt" encoding="text">This is my text file for task 2</file>
-  <file path="Kenny_Rodriguez.txt" encoding="text">This is a message!</file>
   <file path="manage.py" encoding="text">#!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
@@ -618,9 +611,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-</file>
-  <file path="Maximillian_Juliano.txt" encoding="text">Maximillian Juliano</file>
-  <file path="Nakiwe_McDonald.txt" encoding="text">...
 </file>
   <file path="pack_dir_to_xml.py" encoding="text">#!/usr/bin/env python3
 
@@ -779,8 +769,6 @@ def main():
 if __name__ == "__main__":
     main()
 </file>
-  <file path="Quanzhi_Shao.txt" encoding="text">This is Quanzhi Shao’s file for Task 2.
-</file>
   <file path="Readme.md" encoding="text"># Opportunity App
 
 ## 🧰 Setup Instructions
@@ -865,23 +853,9 @@ Access the Django admin interface here:
 - If dependencies change, rerun `pip freeze &gt; requirements.txt` to update the file.  
 - To ensure compatibility, use the same Python version across environments (recommended: Python 3.10+).
 </file>
-  <file path="Readme_Aira.md" encoding="text">Aira Poticano</file>
-  <file path="Readme_BingJieZhu.md" encoding="text">BingJie Zhu.</file>
-  <file path="Readme_brandon.md" encoding="text">Brandon Jachera</file>
-  <file path="Readme_DylanB.md" encoding="text">Dylan A. Brooks</file>
-  <file path="Readme_Georgia.md" encoding="text">Georgia Cross </file>
-  <file path="Readme_GuanzhouShen.md" encoding="text">Guanzhou Shen</file>
-  <file path="Readme_Joshua.md" encoding="text">Joshua Juca-Campoverde</file>
-  <file path="Readme_KennyRodriguez.md" encoding="text">Kenny Rodriguez.</file>
-  <file path="Readme_MaxJuliano.md" encoding="text">Maximillian Juliano</file>
-  <file path="Readme_QuanzhiShao.md" encoding="text">Quanzhi Shao
-</file>
-  <file path="Readme_Shann.md" encoding="text">Shann Sivajeevan</file>
-  <file path="Readme_TylerWerr.md" encoding="text">Tyler Werr</file>
   <file path="requirements.txt" encoding="text">Django&gt;=5.0,&lt;6.0
 psycopg2-binary
 python-dotenv</file>
-  <file path="Shann_Sivajeevan.txt" encoding="text">This is my text file - Shann Sivajeevan</file>
   <file path="test.py" encoding="text">import os
 
 # Define the folder path
@@ -913,8 +887,6 @@ for file_name in files:
 
 print("All files created successfully.")
 </file>
-  <file path="Tyler_Werr.txt" encoding="text">Tyler Werr</file>
-  <file path="Zach_Mogambi.txt" encoding="text">zach mogambi txt</file>
   <file path="accounts/admin.py" encoding="text">from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
