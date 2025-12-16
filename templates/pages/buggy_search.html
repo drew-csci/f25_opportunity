@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="dash-card">
+    <h1>Buggy Search</h1>
+    <p>Query: <code>{{ current_query }}</code> • Field: <code>{{ current_field }}</code></p>
+    <p><strong>Results:</strong> {{ projects|length }}</p>
+    <ul>
+      {% for p in projects %}
+        <li>{{ p.title }} — <em>{{ p.field }}</em></li>
+      {% endfor %}
+    </ul>
+    <hr>
+    <p>Try: <code>/buggy/</code> (no q), <code>/buggy/?q=ai&field=All</code>, or <code>/buggy/?q=city</code></p>
+  </section>
+{% endblock %}
