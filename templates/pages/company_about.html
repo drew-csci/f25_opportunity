@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}About {{ company_name }}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>About {{ company_name }}</h1>
+    <hr>
+    <div class="card mb-3">
+        <div class="card-header">
+            Mission
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{ mission }}</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Problems We Solve
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{ problems_solved }}</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Contact
+        </div>
+        <div class="card-body">
+            <p class="card-text">Email: <a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
+        </div>
+    </div>
+
+    <a href="{% url 'screen1' %}" class="btn btn-secondary">Back to Dashboard</a>
+</div>
+{% endblock %}
