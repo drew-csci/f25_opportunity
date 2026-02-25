@@ -1,0 +1,141 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Chat - Opportunity App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+  body, html {
+      height: 100%;
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f0f2f5;
+  }
+  .chat-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+      background-color: white;
+  }
+  .chat-header {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      flex-shrink: 0;
+  }
+  .chat-header .back-arrow {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      margin-right: 15px;
+  }
+  .chat-header .avatar {
+      border-radius: 50%;
+      margin-right: 10px;
+  }
+  .chat-header .chat-with {
+      flex-grow: 1;
+  }
+  .chat-header .options-dots {
+      font-size: 24px;
+      cursor: pointer;
+  }
+  .chat-log {
+      flex-grow: 1;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: #e5ddd5;
+  }
+  .message {
+      padding: 8px 12px;
+      border-radius: 18px;
+      margin-bottom: 10px;
+      max-width: 70%;
+      position: relative;
+  }
+  .message p {
+      margin: 0;
+      word-wrap: break-word;
+  }
+  .message .timestamp {
+      font-size: 0.75em;
+      color: #888;
+      display: block;
+      text-align: right;
+      margin-top: 4px;
+  }
+  .message.sent {
+      background-color: #dcf8c6;
+      align-self: flex-end;
+  }
+  .message.received {
+      background-color: #fff;
+      align-self: flex-start;
+  }
+  .chat-input-area {
+      display: flex;
+      padding: 10px;
+      background-color: #f0f2f5;
+      border-top: 1px solid #ddd;
+      flex-shrink: 0;
+  }
+  .chat-input {
+      flex-grow: 1;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      margin-right: 10px;
+  }
+  .send-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .send-btn:hover {
+      background-color: #0056b3;
+  }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+        <a href="{% url 'screen1' %}" class="back-arrow">&larr;</a>
+        <img src="https://via.placeholder.com/40" alt="avatar" class="avatar">
+        <div class="chat-with">Chat with Organization</div>
+        <div class="options-dots">&#8942;</div>
+    </div>
+    <div class="chat-log" id="chat-log">
+        <!-- Chat messages will appear here -->
+        <div class="message received">
+            <p>Hello, how are you?</p>
+            <span class="timestamp">10:00 AM</span>
+        </div>
+        <div class="message sent">
+            <p>I'm good, thanks for asking!</p>
+            <span class="timestamp">10:01 AM</span>
+        </div>
+    </div>
+    <div class="chat-input-area">
+        <input type="text" class="chat-input" id="chat-message-input" placeholder="Type a message...">
+        <button class="send-btn">Send</button>
+    </div>
+  </div>
+</body>
+</html>

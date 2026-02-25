@@ -5,9 +5,17 @@
   <meta charset="utf-8"/>
   <title>Opportunity App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+  <!-- PWA stuff -->
+  <meta name="theme-color" content="#007bff"/>
+  <link rel="apple-touch-icon" href="{% static 'images/icon-192x192.png' %}">
+  <link rel="manifest" href="{% static 'manifest.json' %}"/>
+  
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  {% block extra_css %}{% endblock %}
 </head>
 <body>
+  {% if request.resolver_match.url_name != 'chat' %}
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="{% url 'welcome' %}">Opportunity App</a>
@@ -34,6 +42,7 @@
       </nav>
     </div>
   </header>
+  {% endif %}
 
   <main class="container">
     {% if messages %}
@@ -46,10 +55,23 @@
     {% block content %}{% endblock %}
   </main>
 
+  {% if request.resolver_match.url_name != 'chat' %}
   <footer class="site-footer">
     <div class="container">
-      <small>&copy; {% now "Y" %} Opportunity App | <a href="{% url 'faq' %}">FAQ</a></small>
+      <small>&copy; {% now "Y" %} Opportunity App | <a href="{% url 'faq' %}">FAQ</a> | <a href="{% url 'get_mobile_app' %}">Get Mobile App</a></small>
     </div>
   </footer>
+  {% endif %}
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register("{% url 'serviceworker' %}")
+        .then(function(registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(function(error) {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
 </body>
 </html>
