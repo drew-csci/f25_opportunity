@@ -1,0 +1,181 @@
+
+# 2025-11-07 16:57:16.206128
++N
+
+# 2025-11-07 16:58:23.162064
++Y
+
+# 2025-11-07 17:15:16.577589
++N
+
+# 2025-11-07 17:18:21.687271
++Y
+
+# 2025-11-07 17:22:19.694894
++export GEMINI_API_KEY=<АlzaSyВDbgxwaKdozPI8R53qVyAQ4Q7yAveFeRU>
+
+# 2025-11-07 17:44:43.206135
++aider --model gemini
+
+# 2025-11-18 17:16:26.841634
++write me some code that will mark all notifications as read
+
+# 2025-11-18 17:18:19.992457
++N
+
+# 2025-11-18 17:20:29.937225
++write write me some code that will mark all notifications as read
+
+# 2025-11-18 17:21:30.034772
++Y
+
+# 2025-11-25 16:29:32.703538
++n
+
+# 2025-11-25 16:47:51.021606
++Create a page that displays the user's past experiences and achievements simple layout with sections for work history, education, skills, and accomplishments."
+
+# 2025-11-25 16:48:31.258444
++y
+
+# 2025-11-25 16:54:27.175335
++/q
+
+# 2025-11-25 16:59:28.141703
++n
+
+# 2025-11-25 16:59:38.124084
++y
+
+# 2025-11-25 16:59:48.471946
++/q
+
+# 2025-11-25 17:07:28.040382
++n
+
+# 2025-11-25 17:07:34.150225
++d
+
+# 2025-11-25 17:07:42.221971
++/q
+
+# 2025-11-25 17:15:36.412948
++n
+
+# 2025-11-25 17:16:21.533017
++"Create a page that displays the user's past experiences and achievements in an organized, visually appealing layout with sections for work history, education, skills, and accomplishments."
+
+# 2025-11-25 17:16:40.760784
++y
+
+# 2025-11-25 17:22:47.227352
++Move all the files you just created/modified into a new folder called Achievements_page  while keeping everything on the current branch.
+
+# 2025-11-25 17:23:33.966425
++y
+
+# 2025-11-25 17:24:46.891540
++/run git rm templates/pages/portfolio.html
+
+# 2025-11-25 17:24:46.891904
++/run git rm templates/pages/portfolio.html
+
+# 2025-11-25 17:25:45.037455
++y
+
+# 2025-11-25 17:26:28.011668
++AP
+
+# 2025-11-25 17:27:54.805128
++/HELP
+
+# 2025-11-25 17:28:02.680224
++/help
+
+# 2025-11-25 17:33:24.876999
++/git
+
+# 2025-11-25 17:35:02.100593
++/q
+
+# 2025-11-25 17:36:43.104870
++n
+
+# 2025-11-25 17:36:54.261068
++/HELP
+
+# 2025-11-25 17:36:58.605437
++/help
+
+# 2025-11-25 17:37:26.163210
++/load
+
+# 2025-11-25 17:37:43.390516
++achievements_page
+
+# 2025-11-25 17:39:41.656839
++d
+
+# 2025-11-25 17:40:17.524787
++show me where the code mv templates/achievements_page/portfolio.html templates/achievement_pages/
+
+# 2025-11-25 17:40:29.674437
++n
+
+# 2025-11-25 17:41:21.578946
++/commit
+
+# 2025-11-25 17:45:18.980045
++/push
+
+# 2025-11-25 17:46:05.117480
++/q
+
+# 2025-11-25 17:52:56.524132
++n
+
+# 2025-11-25 17:53:00.490464
++/q
+
+# 2025-12-01 09:57:10.843467
++Y
+
+# 2025-12-01 10:11:10.180792
++Create a detailed view page
+
+# 2025-12-01 10:20:00.502253
++y
+
+# 2025-12-01 10:20:29.770733
++
++Create Detailed View Page
+
+# 2025-12-01 10:51:29.440892
++export GEMINI_API_KEY=<AIzaSyCq5Sw6Sd6TmL_zOS7aF4IgnHt-sLw2sFE>
+
+# 2025-12-01 10:52:28.827675
++y
+
+# 2025-12-01 10:52:50.330935
++Create Detailed View Page
+
+# 2025-12-01 10:54:33.441888
++git status
+
+# 2025-12-01 10:58:09.639930
++export GEMINI_API_KEY=<AIzaSyDA8fKu4PcPruuL6qBPV8WYKZLBSDEhYsk>
+
+# 2025-12-01 10:59:28.308456
++export GEMINI_API_KEY=<"AIzaSyDA8fKu4PcPruuL6qBPV8WYKZLBSDEhYsk">
+
+# 2025-12-01 11:00:15.553446
++export GEMINI_API_KEY="AIzaSyDA8fKu4PcPruuL6qBPV8WYKZLBSDEhYsk"
+
+# 2025-12-01 11:03:59.938417
++Y
+
+# 2025-12-01 11:04:25.776629
++git status
+
+# 2025-12-01 11:07:02.725349
++git log
